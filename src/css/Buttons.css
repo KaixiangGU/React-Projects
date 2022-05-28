@@ -1,0 +1,22 @@
+.buttons {
+  cursor: pointer;
+  border: 0px;
+  background-color: rgb(142, 133, 133);
+  color: white;
+}
+
+.buttons:hover {
+  background-color: rgba(142, 133, 133, 0.7);
+}
+
+.buttons.orange {
+  background-color: rgb(251, 172, 35);
+}
+
+.buttons.orange:hover {
+  background-color: rgba(251, 172, 35, 0.7);
+}
+
+.span-two {
+  grid-column: span 2;
+}
