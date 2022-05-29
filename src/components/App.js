@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React, { useReducer } from "react";
 import "../css/App.css";
 import Buttons from "./Buttons";
 import Operations from "./Operations";
@@ -93,7 +93,7 @@ function reducer(state, { type, payload }) {
       };
 
     case ACTIONS.CLEAR:
-      if (state.clear == "C") {
+      if (state.clear === "C") {
         return {
           ...state,
           currOperand: "0",
@@ -101,6 +101,9 @@ function reducer(state, { type, payload }) {
         };
       }
       return { clear: "AC", currOperand: "0" };
+
+    default:
+      return state;
   }
 }
 
@@ -122,6 +125,9 @@ function compute({ currOperand, prevOperand, operation }) {
     case "/":
       computation = prev / current;
       break;
+
+    default:
+      return computation;
   }
   return computation.toString();
 }

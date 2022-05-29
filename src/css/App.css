@@ -12,7 +12,7 @@ body {
 
 .app-container {
   width: 25%;
-  min-width: 130px;
+  min-width: 200px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
@@ -24,14 +24,14 @@ body {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(5, 30px);
+  grid-template-rows: repeat(5, 50px);
   row-gap: 1px;
   column-gap: 1px;
 }
 
 .input {
   width: 100%;
-  min-height: 25px;
+  min-height: 50px;
   text-align: right;
   padding: 0.2rem 0.5rem;
   background-color: rgb(82, 79, 79);
@@ -39,10 +39,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  font-size: 2rem;
 }
 
 .input.prev {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .display-input.prev {
